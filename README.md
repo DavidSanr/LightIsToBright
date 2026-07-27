@@ -1,7 +1,7 @@
 # Light Is To Bright
 
 Juego 2D top-down de supervivencia con crafteo, batallas de jefes con mecánicas
-especiales y combate en tiempo real, para 1-4 jugadores en co-op.
+especiales y combate en tiempo real, para 1-8 jugadores en co-op.
 
 ## Visión
 
@@ -12,7 +12,7 @@ especiales y combate en tiempo real, para 1-4 jugadores en co-op.
   herramientas y zonas (inspirado en Valheim).
 - **Combate**: en tiempo real, con movimiento libre, apuntado con el mouse,
   esquivas y habilidades con cooldown (inspirado en Albion Online).
-- **Co-op**: 2-4 jugadores desde el diseño inicial.
+- **Co-op**: hasta 8 jugadores desde el diseño inicial.
 
 ## Stack
 

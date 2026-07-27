@@ -5,7 +5,7 @@
 
 ## 1. Concepto
 
-Survival 2D top-down con estética pixel art donde 1-4 jugadores recolectan
+Survival 2D top-down con estética pixel art donde 1-8 jugadores recolectan
 recursos, craftean equipo y desafían jefes con mecánicas únicas. Cada jefe
 derrotado desbloquea la siguiente capa de progresión: nuevos materiales,
 recetas y zonas del mundo.
@@ -27,7 +27,7 @@ Si una idea no encaja en ninguno, no entra.
 3. **Progresar es craftear.** El poder viene de recolectar y fabricar, no de
    comprar ni de subir niveles pasivamente. Referencia: Terraria.
 4. **Mejor acompañado.** Todo el juego se puede jugar solo, pero está
-   diseñado para brillar en co-op de 2-4 jugadores.
+   diseñado para brillar en co-op de hasta 8 jugadores.
 
 ## 3. Mecánicas principales
 
@@ -63,11 +63,16 @@ Si una idea no encaja en ninguno, no entra.
 - Los jefes se invocan intencionalmente (altar/ofrenda), no por sorpresa:
   el grupo decide cuándo está listo.
 
-### 3.5 Co-op (2-4 jugadores)
+### 3.5 Co-op (hasta 8 jugadores)
 
 - Modelo host-cliente (un jugador hostea, listen server).
 - Mundo compartido: recursos, construcciones y progreso de jefes son del mundo.
 - El loot de jefes debe repartirse de forma que nadie se quede sin su desbloqueo.
+- El contenido escala con el número de jugadores conectados: los jefes ganan
+  vida y/o mecánicas extra con más jugadores para que un grupo grande no
+  trivialice las peleas.
+- La sincronización de red envía solo lo necesario (posiciones, eventos),
+  no todo el estado, para que el host aguante 8 conexiones sin problemas.
 
 ## 4. Estética
 

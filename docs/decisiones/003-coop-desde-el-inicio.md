@@ -1,6 +1,6 @@
-# ADR 003 — Co-op 2-4 jugadores desde el inicio
+# ADR 003 — Co-op hasta 8 jugadores desde el inicio
 
-- **Fecha**: 2026-07-27
+- **Fecha**: 2026-07-27 (actualizada el mismo día: de 2-4 a hasta 8 jugadores)
 - **Estado**: aceptada
 
 ## Contexto
@@ -12,9 +12,11 @@ código.
 
 ## Decisión
 
-El juego se diseña para **co-op de 2-4 jugadores desde el inicio**, con
+El juego se diseña para **co-op de hasta 8 jugadores desde el inicio**, con
 modelo **host-cliente (listen server)**: un jugador hostea la partida y los
 demás se conectan. No habrá servidores dedicados ni multijugador masivo.
+(Como referencia, Valheim soporta 10 con este mismo modelo, así que 8 es
+un objetivo razonable.)
 
 ## Consecuencias
 
@@ -28,3 +30,9 @@ demás se conectan. No habrá servidores dedicados ni multijugador masivo.
 - Se descarta el multijugador masivo tipo Albion: requiere infraestructura
   de servidores y un equipo mucho mayor. El "sabor Albion" se conserva en
   el sistema de combate, no en la escala de jugadores.
+- Con 8 jugadores el ancho de banda de subida del host crece por cada
+  jugador extra: hay que sincronizar solo lo necesario (posiciones,
+  eventos) y a una frecuencia razonable, no todo el estado en cada frame.
+- El contenido debe escalar con el número de jugadores — en especial los
+  jefes (más vida/mecánicas con más jugadores, como hace Terraria en modo
+  multijugador) — para que un grupo de 8 no trivialice las peleas.
