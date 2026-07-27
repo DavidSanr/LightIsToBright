@@ -7,8 +7,8 @@ especiales y combate en tiempo real, para 1-8 jugadores en co-op.
 
 - **Estética**: pixel art 2D, inspirado en Terraria y Stardew Valley.
 - **Género**: survival + crafteo. Recolectas, construyes y sobrevives.
-- **Mundo procedural**: cada partida genera un mundo distinto a partir de
-  una semilla, con biomas por etapas de progresión.
+- **Mundo diseñado a mano**: un mapa fijo construido zona por zona
+  alrededor de los jefes, con recursos que reaparecen con el tiempo.
 - **Progresión por jefes**: cada jefe tiene mecánicas únicas que hay que
   aprender para vencerlo, y derrotarlo desbloquea nuevos materiales,
   herramientas y zonas (inspirado en Valheim).
@@ -48,7 +48,7 @@ docs/                Diseño y decisiones
 - [x] Fase 0 — Bases: decisiones, GDD, esqueleto del proyecto, movimiento básico.
 - [ ] Fase 1 — Combate: apuntado con mouse, ataque básico, esquiva, un enemigo simple.
 - [ ] Fase 2 — Co-op temprano: 2 jugadores en LAN (integrarlo antes de que el código crezca).
-- [ ] Fase 3 — Mundo y recolección: generación procedural con semilla, recursos (madera, piedra), inventario.
+- [ ] Fase 3 — Mundo y recolección: primera zona diseñada a mano, recursos (madera, piedra), inventario.
 - [ ] Fase 4 — Crafteo: recetas, estaciones de trabajo, herramientas.
 - [ ] Fase 5 — Supervivencia: vida, hambre, día/noche.
 - [ ] Fase 6 — Primer jefe: mecánicas especiales + desbloqueo de progresión.

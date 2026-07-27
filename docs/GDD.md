@@ -52,15 +52,16 @@ Si una idea no encaja en ninguno, no entra.
 - Estaciones de trabajo (mesa de crafteo, forja, …) que amplían recetas.
 - Inventario limitado para forzar decisiones.
 
-### 3.4 Mundo procedural
+### 3.4 Mundo diseñado a mano
 
-- El mundo se genera proceduralmente a partir de una semilla: cada
-  partida nueva es un mundo distinto; la misma semilla reproduce el mismo
-  mundo (ver ADR 004).
-- La generación es determinista y garantiza que todos los biomas existan
-  y sean alcanzables.
-- Las zonas especiales (arenas de jefes, estructuras con loot) son
-  plantillas hechas a mano que el generador coloca en el mundo.
+- Mapa fijo, igual para todas las partidas, construido zona por zona en
+  el editor (ver ADR 004). Referencia: Stardew Valley.
+- El mundo se construye alrededor de los jefes: cada zona conduce a su
+  jefe, con su arena diseñada específicamente para sus mecánicas.
+- Los recursos recolectables reaparecen con el tiempo (respawn) para que
+  el mapa fijo no se agote.
+- La rejugabilidad viene del dominio de mecánicas, las builds y el co-op,
+  no de mapas nuevos.
 
 ### 3.5 Jefes y progresión (tipo Valheim)
 
@@ -95,9 +96,9 @@ Si una idea no encaja en ninguno, no entra.
 
 Cosas que decidiremos más adelante, en orden aproximado de urgencia:
 
-- [x] ~~¿Mundo procedural o diseñado a mano?~~ → Procedural con semilla (ADR 004).
+- [x] ~~¿Mundo procedural o diseñado a mano?~~ → Diseñado a mano (ADR 004).
 - [ ] Sistema de habilidades: ¿cuántos slots? ¿atadas 100% al arma como Albion?
-- [ ] Tamaño del mundo generado y si es finito (Terraria) o prácticamente infinito por chunks (Minecraft).
+- [ ] Cuántas zonas/biomas tendrá el mapa y su tamaño aproximado.
 - [ ] Penalización de muerte exacta.
 - [ ] ¿Construcción de base libre (colocar muros/estructuras) o solo estaciones?
 - [ ] Cantidad de jefes para una primera versión jugable (candidato: 3).
