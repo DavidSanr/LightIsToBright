@@ -52,7 +52,17 @@ Si una idea no encaja en ninguno, no entra.
 - Estaciones de trabajo (mesa de crafteo, forja, …) que amplían recetas.
 - Inventario limitado para forzar decisiones.
 
-### 3.4 Jefes y progresión (tipo Valheim)
+### 3.4 Mundo procedural
+
+- El mundo se genera proceduralmente a partir de una semilla: cada
+  partida nueva es un mundo distinto; la misma semilla reproduce el mismo
+  mundo (ver ADR 004).
+- La generación es determinista y garantiza que todos los biomas existan
+  y sean alcanzables.
+- Las zonas especiales (arenas de jefes, estructuras con loot) son
+  plantillas hechas a mano que el generador coloca en el mundo.
+
+### 3.5 Jefes y progresión (tipo Valheim)
 
 - El mundo se organiza en etapas/biomas, cada una cerrada por un jefe.
 - Cada jefe tiene 2-3 mecánicas especiales propias que hay que resolver
@@ -63,7 +73,7 @@ Si una idea no encaja en ninguno, no entra.
 - Los jefes se invocan intencionalmente (altar/ofrenda), no por sorpresa:
   el grupo decide cuándo está listo.
 
-### 3.5 Co-op (hasta 8 jugadores)
+### 3.6 Co-op (hasta 8 jugadores)
 
 - Modelo host-cliente (un jugador hostea, listen server).
 - Mundo compartido: recursos, construcciones y progreso de jefes son del mundo.
@@ -85,8 +95,9 @@ Si una idea no encaja en ninguno, no entra.
 
 Cosas que decidiremos más adelante, en orden aproximado de urgencia:
 
-- [ ] ¿El mundo es generado proceduralmente (Terraria/Valheim) o diseñado a mano (Stardew)?
+- [x] ~~¿Mundo procedural o diseñado a mano?~~ → Procedural con semilla (ADR 004).
 - [ ] Sistema de habilidades: ¿cuántos slots? ¿atadas 100% al arma como Albion?
+- [ ] Tamaño del mundo generado y si es finito (Terraria) o prácticamente infinito por chunks (Minecraft).
 - [ ] Penalización de muerte exacta.
 - [ ] ¿Construcción de base libre (colocar muros/estructuras) o solo estaciones?
 - [ ] Cantidad de jefes para una primera versión jugable (candidato: 3).
